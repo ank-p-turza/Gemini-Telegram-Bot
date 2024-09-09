@@ -1,0 +1,11 @@
+[Unit]
+Description=Gemini Telegram Bot
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /path/to/your/bot/script.py
+Restart=always
+User=your_username
+
+[Install]
+WantedBy=multi-user.target
